@@ -17,7 +17,7 @@ git clone https://github.com/codi639/grafana_dashboard_update
 ```
 
 2. Set Grafana Variables:
-  - Modify the following variables in the script (grafana_dashboard.sh):
+  - Modify the following variables in the script (update_dashboard.sh):
   - GRAFANA_URL: URL of your Grafana instance.
   - API_KEY: API key for authentication with Grafana.
   - DASHBOARD_UID: UID of the Grafana dashboard you want to modify.
@@ -35,7 +35,7 @@ git clone https://github.com/codi639/grafana_dashboard_update
 2. Run the Script:
 
 ```bash
-./grafana_dashboard.sh
+./update_dashboard.sh
 ```
 
 3. Verify Execution:

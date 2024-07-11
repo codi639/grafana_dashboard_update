@@ -25,9 +25,16 @@ git clone https://github.com/codi639/grafana_dashboard_update
   - FTTH_client_input: Path to a text file (ftth_clients.txt) containing IP addresses and router names.
 
 3. External Data Setup:
-  - Implement the appropriate command or API call to fetch external data and store it in ftth_clients.txt as IP addresses and router names (e.g.:
+  - Implement the appropriate command or API call to fetch external data and store it in ftth_clients.txt as IP addresses and router names
+(e.g.:
+
 192.168.1.1:router1
-192.168.1.2:router2).
+
+192.168.1.2:router2
+
+192.168.1.3:router3
+
+...).
 
 4. Setup a Grafana API key
   - Using the administration parameter of your Grafana instance, configure an API key that have the good permissions concerning your dashboard.

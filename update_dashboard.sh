@@ -70,9 +70,9 @@ done < "$FTTH_client_input"
 # Append the end of the json variable
 OPTIONS+="],\"query\": \"$result\", \"queryValue\": \"\", \"skipUrlSync\": false, \"type\": \"custom\"}"
 
-# Define the end part of the dashboard JSON. You'll need to update this part based on your original dashboard JSON structure.
-# I still did not find a way to do this dynamically be taking it from the original one
-END="] }, \"time\": {\"from\": \"now-1h\", \"to\": \"now\"}, \"timepicker\": {\"refresh_intervals\": [ \"30s\"]}, \"timezone\": \"\", \"title\": \"Your Dashbord Title\", \"uid\": \"the UID\", \"version\": 50,\"weekstart\": \"\"}}"
+# Define the end part of the dashboard JSON. You'll need to update this part based on your original dashboard JSON structure (take a note of your dashboard version to make it match).
+# I still did not find a way to do this dynamically by taking it from the original one
+END="] }, \"time\": {\"from\": \"now-1h\", \"to\": \"now\"}, \"timepicker\": {\"refresh_intervals\": [ \"30s\"]}, \"timezone\": \"\", \"title\": \"Your Dashbord Title\", \"uid\": \"the UID\", \"version\": the version,\"weekstart\": \"\"}}"
 
 # Extract relevant part from original dashboard JSON and append options and end to create the modified dashboard JSON
 # This is where the script cut the original json dashboard giving some information

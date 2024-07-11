@@ -29,6 +29,10 @@ git clone https://github.com/codi639/grafana_dashboard_update
 192.168.1.1:router1
 192.168.1.2:router2).
 
+4. Setup a Grafana API key
+  - Using the administration parameter of your Grafana instance, configure an API key that have the good permissions concerning your dashboard.
+  - You should also take note of the UID of the dashboard you want to make change.
+
 ## Usage
 1. Do a backup of your actual Dashboard in case things goes bad.
 

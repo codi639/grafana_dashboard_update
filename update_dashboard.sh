@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Prompt user to confirm they have read the script
-read -r -p "Did you read all the script before starting it? If not, please do, it's not that long and takes some very specific parameters (Y/n): " answer
+prompt="Did you read all the script before starting it?\nIf not, please do, it's not that long and takes some very specific parameters (Y/n)\nWhen adding a single data to the variable, it's easier to add it manually. If there are several, the script is used. \e[32mREMEMBER TO CHANGE THE VERSION\e[0m: "
+read -r -p "$(echo -e "$prompt")" answer
 case "${answer^^}" in
     y|Y )
         echo "Starting the script..."
